@@ -1,0 +1,137 @@
+/*基础样式*/
+body {
+  background-color: #efeff4;
+  font-size: 16px;
+}
+/*内容样式*/
+.title {
+  height: 40px;
+  padding: 0 12px;
+  background-color: #fff;
+  border-bottom: 1px solid #e1e1e1;
+  text-align: center;
+  overflow: hidden;
+}
+.title .nav_back {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("../../image/nav_back_icon@2x.png") no-repeat;
+  background-size: 50%;
+  position: absolute;
+  margin: 12px auto 0;
+}
+.title .title_text {
+  display: block;
+  color: #ea5404;
+  margin: 12px auto 0;
+  font-size: 20px;
+}
+.head {
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #c1c1c2;
+}
+.must {
+  background-color: #fff;
+  width: 100%;
+  border-bottom: 1px solid #e1e1e1;
+}
+.must .add {
+  padding-top: 12px;
+  margin-bottom: 6px;
+}
+.must .add .add_head {
+  width: 74px;
+  height: 74px;
+  line-height: 74px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #878787;
+  color: #fff;
+  font-size: 12px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+.must .add .borders {
+  width: 140px;
+  height: 1px;
+  background-color: #e3e3e3;
+  margin: 0 auto;
+}
+.must .must_box {
+  display: flex;
+  width: 100%;
+}
+.must .must_box .must_row {
+  height: 32px;
+  margin: 0 57.5px auto;
+  margin-top: 6px;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  width: 100%;
+  padding: 0 8px;
+  background-color: #efeff4;
+  flex: 1;
+}
+.must .must_box .must_row .inp {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  background-color: #efeff4;
+}
+.must .must_box .must_row .inp:focus {
+  outline: none;
+}
+.must .cert {
+  flex: 1;
+  margin: 12px 130px;
+}
+.must .cert .optional_text {
+  display: block;
+  height: 74px;
+  line-height: 74px;
+  text-align: center;
+  background-color: #878787;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 5px;
+}
+.optional {
+  height: 84px;
+  padding-top: 12px;
+  background-color: #fff;
+  border-bottom: 1px solid #e1e1e1;
+}
+.optional .id_card {
+  flex: 1;
+  margin: 0 130px;
+}
+.optional .id_text {
+  display: block;
+  height: 74px;
+  line-height: 74px;
+  text-align: center;
+  background-color: #878787;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 5px;
+}
+.row_button {
+  height: 40px;
+  margin: 40px 12px 20px 12px;
+  text-align: center;
+}
+.submit {
+  background-color: #ea5404;
+  border: none;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  display: block;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+}

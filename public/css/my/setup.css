@@ -1,0 +1,127 @@
+/*基础样式*/
+body {
+  background-color: #efeff4;
+  font-size: 16px;
+}
+/*内容样式*/
+.title {
+  height: 40px;
+  padding: 0 12px;
+  background-color: #fff;
+  border-bottom: 1px solid #e1e1e1;
+  text-align: center;
+  overflow: hidden;
+}
+.title .nav_back {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("../../image/nav_back_icon@2x.png") no-repeat;
+  background-size: 50%;
+  position: absolute;
+  margin: 12px auto 0;
+}
+.title .title_text {
+  display: block;
+  margin: 12px auto 0;
+  font-size: 20px;
+}
+.row {
+  height: 56px;
+  padding: 0 12px;
+  margin-top: 12px;
+  background-color: #fff;
+  border-bottom: 1px solid #d6d7dc;
+  display: flex;
+  position: relative;
+}
+.row .receive_text {
+  flex: 1;
+  line-height: 56px;
+}
+.row .point {
+  width: 58px;
+  height: 36px;
+  margin: 10px 0;
+  background-color: #ea5404;
+  border-radius: 20px;
+  position: relative;
+}
+.row .point .point_btn {
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 4px 3px -1px #b6b6b6;
+  position: absolute;
+  left: 1px;
+  top: 0;
+}
+.row .list_text {
+  flex: 1;
+  line-height: 56px;
+}
+.row .figure {
+  color: #b4b4b4;
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  right: 30px;
+}
+.row .link_pre {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: block;
+  width: 16px;
+  height: 30px;
+  margin-top: -8px;
+  background: url("../../image/content_list_right_icon@2x.png") no-repeat;
+  background-size: 50%;
+}
+.boxes {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(155,155,155,0.8);
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: none;
+}
+.success_box {
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  width: 60%;
+  left: 20%;
+  top: 50%;
+  margin-top: -97px;
+  text-align: center;
+  display: none;
+}
+.success_box .success_text {
+  height: 74px;
+  line-height: 74px;
+  border-bottom: 1px solid #efeff1;
+  font-size: 14px;
+}
+.success_box .btn_box {
+  display: flex;
+}
+.success_box .btn_box .success_btn {
+  height: 46px;
+  line-height: 46px;
+  color: #ea5404;
+  font-size: 20px;
+  flex: 1;
+}
+.success_box .btn_box .cancel_btn {
+  height: 46px;
+  line-height: 46px;
+  color: #646464;
+  font-size: 20px;
+  flex: 1;
+  border-right: 1px solid #efeff1;
+}

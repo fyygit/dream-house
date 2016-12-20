@@ -1,0 +1,96 @@
+/*基础样式*/
+body
+  background-color:#efeff4
+  font-size: 16px
+/*内容样式*/
+.title
+  height: 40px
+  padding: 0 12px
+  background-color: #fff
+  border-bottom: 1px solid #e1e1e1
+  text-align: center
+  overflow: hidden
+
+.title .nav_back
+  display:block
+  width: 16px
+  height: 16px
+  background: url("../../image/nav_back_icon@2x.png")no-repeat
+  background-size: 50%
+  position absolute
+  margin: 12px auto 0
+
+.title .title_text
+  display: block
+  margin: 12px auto 0
+  font-size 20px
+
+.personal
+  height 364px
+  margin-top 12px
+  border-bottom 1px solid #e1e1e1
+  background-color #fff
+  .head_row
+    height 56px
+    padding 0 12px
+    border-bottom 1px solid #e1e1e1
+    display flex
+    position relative
+    .head_text
+      flex 1
+      line-height 56px
+      color #717171
+    .head_img
+      height 80px
+      width 80px
+      background url("../../image/content_img_user@2x.png")no-repeat
+      background-size 50%
+      position absolute
+      top 50%
+      margin-top -20px
+      left 50%
+  .personal_next
+    position absolute
+    top 50%
+    margin-top -10px
+    right 0
+    display block
+    width 18px
+    height 30px
+    background url("../../image/list.png")no-repeat
+    background-size 70%
+  .personal_row
+    height 36px
+    padding 0 12px
+    border-bottom 1px solid #e1e1e1
+    position relative
+    display flex
+    .personal_text
+      color #717171
+      line-height 36px
+      flex 1
+    .inp_row
+      flex 1
+      .personal_pnt
+        height 34px
+        width 100%
+        font-size 14px
+        border none
+        &:focus
+          outline: none
+  .optional_box
+    margin-top 20px
+    position flex
+    .optional_list
+      flex 1
+      margin 0 4.1%
+      height 68px
+      width 25%
+      text-align center
+      float left
+      .optional_text
+        display block
+        height 68px
+        background-color #878787
+        border-radius 5px
+        margin-bottom 6px

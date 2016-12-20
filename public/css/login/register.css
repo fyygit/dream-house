@@ -1,0 +1,146 @@
+/*基础样式*/
+body {
+  background-color: #efeff4;
+  font-size: 16px;
+}
+/*内容样式*/
+.title {
+  height: 40px;
+  padding: 0 12px;
+  background-color: #fff;
+  border-bottom: 1px solid #e1e1e1;
+  text-align: center;
+  overflow: hidden;
+}
+.title .nav_back {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("../../image/nav_back_icon@2x.png") no-repeat;
+  background-size: 50%;
+  position: absolute;
+  margin: 12px auto 0;
+}
+.title .title_text {
+  display: block;
+  color: #ea5404;
+  margin: 12px auto 0;
+  font-size: 20px;
+}
+.title .title_right {
+  float: right;
+  display: block;
+  margin: 12px auto 0;
+}
+/*验证*/
+.signUp {
+  margin-top: 20px;
+  padding: 0 12px;
+  background-color: #fff;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+}
+.signUp .row {
+  height: 42px;
+  line-height: 42px;
+  display: flex;
+  border-bottom: 1px solid #e1e1e1;
+}
+.signUp .row .gain {
+  width: 76px;
+  height: 26px;
+  background-color: #ea5404;
+  color: #fff;
+  float: right;
+  font-size: 12px;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 8px auto 0;
+}
+.signUp .row:nth-child(5) {
+  border-bottom: none;
+}
+.signUp .row .user-img {
+  position: relative;
+  top: 8px;
+  height: 24px;
+  width: 24px;
+  background: url("../../image/content_ID_icon@2x.png") no-repeat;
+  background-size: 24px 24px;
+  display: inline-block;
+}
+.signUp .row .pass-img {
+  position: relative;
+  top: 7px;
+  height: 25px;
+  width: 20px;
+  margin: 0 2px;
+  background: url("../../image/content_password_icon@2x.png") no-repeat;
+  background-size: 100%;
+  display: inline-block;
+}
+.signUp .row .verify-img {
+  position: relative;
+  top: 8px;
+  height: 26px;
+  width: 14px;
+  margin: 0 5px;
+  background: url("../../image/content_verify_icon@2x.png") no-repeat;
+  background-size: 100%;
+  display: inline-block;
+}
+.signUp .row .id-img {
+  position: relative;
+  top: 8px;
+  height: 24px;
+  width: 24px;
+  background: url("../../image/content_position_icon@2x.png") no-repeat;
+  background-size: 100%;
+  display: inline-block;
+}
+.signUp .row .form-name {
+  margin-left: 10px;
+  display: inline-block;
+  line-height: 42px;
+}
+.signUp .row .link_cell {
+  line-height: 42px;
+  flex: 1;
+}
+.signUp .row .link_cell .inp {
+  width: 100%;
+  border: none;
+  font-size: 14px;
+}
+.signUp .row .link_cell .inp:focus {
+  outline: none;
+}
+.row_button {
+  height: 40px;
+  margin: 40px 12px 20px 12px;
+  text-align: center;
+}
+.submit {
+  background-color: #c7c7c7;
+  border: none;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  display: block;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.submit:focus {
+  outline: none;
+}
+.blank {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+}
+.blank a {
+  color: #eb6823;
+  text-decoration: underline;
+}
