@@ -23,7 +23,7 @@ var app = express();
 
 console.log( __dirname );
 ////拼接物理路径，用来指定虚拟路径的访问
-var viewsPath = path.join( __dirname, 'views' );
+var viewsPath = path.join( __dirname,'views' );
 console.log( viewsPath );
 ////指定访问 页面 的路径
 app.use( '/', express.static( viewsPath ) );
@@ -40,11 +40,11 @@ app.get("/login",function(req,res){
 
 
 //监听端口 9999，用来启动服务
-app.listen( 9999, function()
+app.listen( 16948, function()
 {
-	console.log( 'server run at port 9999' );
+	console.log( 'server run at port 16948' );
 } );
 //模块导出
 module.exports = app;
-//访问网址http://127.0.0.1:9999/index.html
-//启动node程序（$ node app.js)
+//访问网址http://127.0.0.1:16948/index.html
+//启动node程序（$ node server.js)

@@ -18,7 +18,7 @@
 <body>
 <!--注册-->
 <div class="title">
-    <i class="nav_back"></i>
+    <a href="signin.html" class="nav_back"></a>
     <a href="./signin.html" class="title_right">登录</a>
     <span class="title_text">注册</span>
 </div>
@@ -32,9 +32,9 @@
     </div>
     <div class="row">
         <i class="verify-img"></i>
-        <label for="user"  class="form-name">验证码：</label>
+        <label for="user" class="form-name">验证码：</label>
         <div class="link_cell">
-            <input type="text" class="inp" id="code"  placeholder="请输入验证码">
+            <input type="text" class="inp" id="code" placeholder="请输入验证码">
         </div>
         <a id="btn" class="gain">获取验证码</a>
     </div>
@@ -42,14 +42,14 @@
         <i class="pass-img"></i>
         <label for="password" class="form-name">密码：</label>
         <div class="link_cell">
-            <input type="password" class="inp" id="repassword"  placeholder="请输入新的登录密码">
+            <input type="password" class="inp" id="password" placeholder="请输入您的登录密码">
         </div>
     </div>
     <div class="row">
         <i class="pass-img"></i>
         <label for="password" class="form-name">密码：</label>
         <div class="link_cell">
-            <input type="password" class="inp" id="password"  placeholder="请输入新的登录密码">
+            <input type="password" class="inp" id="repassword" placeholder="请再次输入您的登录密码">
         </div>
     </div>
     <div class="row">
@@ -58,13 +58,22 @@
         <div class="link_cell">
             <input type="text" class="inp" id="identity" placeholder="经纪人">
         </div>
+        <i class="icon" id="icon"></i>
+    </div>
+    <div class="icon-list">
+        <span class="type">经纪人</span>
+        <span class="type">小业主</span>
+        <span class="type">运营商</span>
+        <span class="type">代理商</span>
+        <span class="type">开发商</span>
     </div>
 </div>
 <div class="row_button">
-    <a href="register_success.html" class="submit">注册</a>
+    <span class="submit">注册</span>
 </div>
 <p class="blank">注册即代表同意 <a href="">《活力矩阵用户协议》</a></p>
-
-<script src="../../public/js/signin.js"></script>
 </body>
+<script src="//cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+<script src="../../public/libs/zepto/touch.js"></script>
+<script src="../../public/js/proving.js"></script>
 </html>

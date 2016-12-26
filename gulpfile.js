@@ -27,7 +27,7 @@ var nodemon = require('gulp-nodemon');
 gulp.task('nodemon',function(ab){
     var ft = false;
     return nodemon({
-        script:'./app.js'
+        script:'./server.js'
     } ).on('start',function(){
         if(!ft){
             ab();
@@ -39,7 +39,7 @@ gulp.task('nodemon',function(ab){
 gulp.task('browserSync',['nodemon'],function(){
     browserSync.init({
         proxy:{
-            target:'http://127.0.0.1:9999'
+            target:'http://127.0.0.1:16948'
         },
         port:9888,
         open:false,

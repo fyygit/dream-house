@@ -1,0 +1,1 @@
+$(function(){$(".order-inp").click(function(){$(this).text("已接单，待反馈"),$(this).removeClass("order-inp"),$(this).addClass("order-text")}),$(".order-row").click(function(){"接单"==$(this).children(".order-inp").text()&&(location.href="./appointment-details.html")})});

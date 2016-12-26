@@ -12,26 +12,23 @@ body
   border-bottom: 1px solid #e1e1e1
   text-align: center
   overflow: hidden
-
-.title .nav_back
-  display:block
-  width: 16px
-  height: 16px
-  background: url("../../image/nav_back_icon@2x.png")no-repeat
-  background-size: 50%
-  position absolute
-  margin: 12px auto 0
-
-.title .title_text
-  display: block
-  color: #ea5404
-  margin: 12px auto 0
-  font-size 20px
-
-.title .title_right
-  float:right
-  display: block
-  margin: 12px auto 0
+  .nav_back
+    display:block
+    width: 16px
+    height: 16px
+    background: url("../../image/nav_back_icon@2x.png")no-repeat
+    background-size: 50%
+    position absolute
+    margin: 12px auto 0
+  .title_text
+    display: block
+    color: #ea5404
+    margin: 12px auto 0
+    font-size 20px
+  .title_right
+    float:right
+    display: block
+    margin: 12px auto 0
 /*验证*/
 .signUp
   margin-top: 20px
@@ -39,82 +36,98 @@ body
   background-color: #fff
   border-bottom: 1px solid #e1e1e1
   border-top:1px solid #e1e1e1
-
-.signUp .row
-  height 42px
-  line-height 42px
-  display flex
-  border-bottom:1px solid #e1e1e1
-
-.signUp .row .gain
-  width 76px
-  height 26px
-  background-color #ea5404
-  color #fff
-  float right
-  font-size 12px
-  line-height 26px
-  text-align center
-  border-radius 5px
-  margin 8px auto 0
-
+  .row
+    height 42px
+    line-height 42px
+    display flex
+    border-bottom:1px solid #e1e1e1
+    .user-img
+      position: relative
+      top: 8px
+      height: 24px
+      width: 24px
+      background: url("../../image/content_ID_icon@2x.png")no-repeat
+      background-size: 24px 24px
+      display: inline-block
+    .pass-img
+      position: relative
+      top: 7px
+      height: 25px
+      width: 20px
+      margin:0 2px
+      background: url("../../image/content_password_icon@2x.png")no-repeat
+      background-size: 100%
+      display: inline-block
+    .verify-img
+      position: relative
+      top: 8px
+      height: 26px
+      width: 14px
+      margin:0 5px
+      background: url("../../image/content_verify_icon@2x.png")no-repeat
+      background-size: 100%
+      display: inline-block
+    .id-img
+      position: relative
+      top: 8px
+      height: 24px
+      width: 24px
+      background: url("../../image/content_position_icon@2x.png")no-repeat
+      background-size: 100%
+      display: inline-block
+    .gain
+        width 76px
+        height 26px
+        background-color #ea5404
+        color #fff
+        float right
+        font-size 12px
+        line-height 26px
+        text-align center
+        border-radius 5px
+        margin 8px auto 0
+    .form-name
+      margin-left: 10px
+      display: inline-block
+      line-height: 42px
+    .link_cell
+      line-height: 42px
+      flex:1
+    .inp
+      width: 100%
+      border: none
+      font-size 14px
+      &:focus
+        outline: none
+    .icon
+      width 14px
+      height 8px
+      background url("../../image/content_icon02_nor@2x.png")no-repeat center
+      background-size 14px 8px
+      margin-top 20px
+    & .active
+      background url("../../image/content_icon02_click@2x.png")no-repeat center
+      background-size 14px 8px
 .signUp .row:nth-child(5)
   border-bottom:none
-
-.signUp .row .user-img
-  position: relative
-  top: 8px
-  height: 24px
-  width: 24px
-  background: url("../../image/content_ID_icon@2x.png")no-repeat
-  background-size: 24px 24px
-  display: inline-block
-
-.signUp .row .pass-img
-  position: relative
-  top: 7px
-  height: 25px
-  width: 20px
-  margin:0 2px
-  background: url("../../image/content_password_icon@2x.png")no-repeat
-  background-size: 100%
-  display: inline-block
-
-.signUp .row .verify-img
-  position: relative
-  top: 8px
-  height: 26px
-  width: 14px
-  margin:0 5px
-  background: url("../../image/content_verify_icon@2x.png")no-repeat
-  background-size: 100%
-  display: inline-block
-
-.signUp .row .id-img
-  position: relative
-  top: 8px
-  height: 24px
-  width: 24px
-  background: url("../../image/content_position_icon@2x.png")no-repeat
-  background-size: 100%
-  display: inline-block
-
-.signUp .row .form-name
-  margin-left: 10px
-  display: inline-block
-  line-height: 42px
-
-.signUp .row .link_cell
-  line-height: 42px
-  flex:1
-
-.signUp .row .link_cell .inp
-  width: 100%
-  border: none
-  font-size 14px
-
-.signUp .row .link_cell .inp:focus
-  outline: none
+.icon-list
+  width 66px
+  background-color #a3a3a3
+  position absolute
+  right 12px
+  top 50%
+  margin-top -68px
+  border 1px solid transparent
+  border-radius 5px
+  display none
+  .type
+    display block
+    height 32px
+    line-height 32px
+    text-align center
+    border-bottom 1px solid #e1e1e1
+    &:nth-child(5)
+      border-bottom:none
 
 .row_button
   height: 40px

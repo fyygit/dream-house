@@ -38,6 +38,7 @@ body {
 }
 .option .text.active {
   border-bottom: 1px solid #eb6942;
+  color: #eb6942;
 }
 .option .option_link {
   display: block;
@@ -45,9 +46,6 @@ body {
   margin: 12px 0;
   text-align: center;
   border-right: 1px solid #e1e1e1;
-}
-.option .option_link.active {
-  color: #eb6942;
 }
 .option .option_links {
   display: block;

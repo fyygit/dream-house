@@ -46,21 +46,6 @@ body {
   display: flex;
   border-bottom: 1px solid #e1e1e1;
 }
-.signUp .row .gain {
-  width: 76px;
-  height: 26px;
-  background-color: #ea5404;
-  color: #fff;
-  float: right;
-  font-size: 12px;
-  line-height: 26px;
-  text-align: center;
-  border-radius: 5px;
-  margin: 8px auto 0;
-}
-.signUp .row:nth-child(5) {
-  border-bottom: none;
-}
 .signUp .row .user-img {
   position: relative;
   top: 8px;
@@ -99,6 +84,18 @@ body {
   background-size: 100%;
   display: inline-block;
 }
+.signUp .row .gain {
+  width: 76px;
+  height: 26px;
+  background-color: #ea5404;
+  color: #fff;
+  float: right;
+  font-size: 12px;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 8px auto 0;
+}
 .signUp .row .form-name {
   margin-left: 10px;
   display: inline-block;
@@ -108,13 +105,48 @@ body {
   line-height: 42px;
   flex: 1;
 }
-.signUp .row .link_cell .inp {
+.signUp .row .inp {
   width: 100%;
   border: none;
   font-size: 14px;
 }
-.signUp .row .link_cell .inp:focus {
+.signUp .row .inp:focus {
   outline: none;
+}
+.signUp .row .icon {
+  width: 14px;
+  height: 8px;
+  background: url("../../image/content_icon02_nor@2x.png") no-repeat center;
+  background-size: 14px 8px;
+  margin-top: 20px;
+}
+.signUp .row .active {
+  background: url("../../image/content_icon02_click@2x.png") no-repeat center;
+  background-size: 14px 8px;
+}
+.signUp .row:nth-child(5) {
+  border-bottom: none;
+}
+.icon-list {
+  width: 66px;
+  background-color: #a3a3a3;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  margin-top: -68px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  display: none;
+}
+.icon-list .type {
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border-bottom: 1px solid #e1e1e1;
+}
+.icon-list .type:nth-child(5) {
+  border-bottom: none;
 }
 .row_button {
   height: 40px;

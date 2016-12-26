@@ -1,0 +1,110 @@
+/*基础样式*/
+body {
+  background-color: #efeff4;
+  font-size: 16px;
+}
+/*内容样式*/
+.title {
+  height: 40px;
+  padding: 0 12px;
+  background-color: #fff;
+  border-bottom: 1px solid #e1e1e1;
+  text-align: center;
+  overflow: hidden;
+}
+.title .nav_back {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("../../image/nav_back_icon@2x.png") no-repeat;
+  background-size: 50%;
+  position: absolute;
+  margin: 12px 0;
+}
+.title .title_text {
+  display: block;
+  margin: 12px 0;
+  font-size: 20px;
+}
+.head {
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #c1c1c2;
+}
+.people {
+  height: 56px;
+  background-color: #fff;
+  border-bottom: 1px solid #e1e1e1;
+  position: relative;
+}
+.people .people-img {
+  display: block;
+  height: 40px;
+  width: 40px;
+  background: url("../../image/content_img_user@2x.png") no-repeat center;
+  background-size: 40px;
+  padding: 6px 12px;
+  float: left;
+}
+.people .name {
+  font-size: 14px;
+  padding-top: 12px;
+}
+.people .lei {
+  font-size: 12px;
+}
+.people .phone {
+  display: block;
+  height: 36px;
+  width: 36px;
+  background: url("../../image/content_icon_call@2x.png") no-repeat center;
+  background-size: 22px;
+  position: absolute;
+  top: 8px;
+  right: 12px;
+}
+.news {
+  height: 42px;
+  background-color: #fff;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 12px;
+}
+.news .h3 {
+  font-size: 14px;
+}
+.news .cont {
+  font-size: 12px;
+  color: #717171;
+  float: left;
+  width: 50%;
+  line-height: 12px;
+  margin-top: 4px;
+}
+.time {
+  height: 46px;
+  line-height: 46px;
+  padding-left: 12px;
+  background-color: #fff;
+  border-bottom: 1px solid #e1e1e1;
+}
+.state {
+  height: 144px;
+  background-color: #fff;
+  padding: 12px 0 12px 12px;
+}
+.row_button {
+  height: 40px;
+  margin: 40px 12px 20px 12px;
+  text-align: center;
+}
+.submit {
+  background-color: #ea5404;
+  border: none;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  display: block;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+}

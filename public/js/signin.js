@@ -1,36 +1,45 @@
 /**
- * Created by asus on 2016/12/11.
+ * Created by Administrator on 2016/12/22.
  */
-var sleep = 60,
-    interval = null;
-window.onload = function ()
-{
-    var btn = document.getElementById ('btn');
-    btn.addEventListener("click",function ()
-    {
-        if (!interval)
-        {
-            this.style.backgroundColor = '#c7c7c7';
-            this.style.width='92px';
-            this.style.color='#f4f4f4';
-            this.disabled = "disabled";
-            this.innerText = sleep-- +"s后重新获取" ;
-            interval = setInterval (function ()
-            {
-                if (sleep == 0)
-                {
-                    if (!!interval)
-                    {
-                        clearInterval (interval);
-                        interval = null;
-                        sleep = 60;
-                        btn.innerText = "获取验证码";
-                        btn.style.backgroundColor = '';
-                    }
-                    return false;
-                }
-                btn.innerText = sleep-- +"s后重新获取" ;
-            }, 1000);
+$(function(){
+    /*登录跳转*/
+    $("#password").blur(function(){
+        if($("#form-name").val()!=""&&$("#password").val()!=""){
+            $(".submit").css("background-color","#ea5404");
+            $(".submit").click(function(){
+                location.href="../my/my-afterlanding.html";
+            })
         }
+    });
+
+    /*清除样式*/
+    $("#clear").click(function(){
+        $(".boxes,.success_box").css("display","block");
+        $(".cancel_btn").click(function(){
+            $(".boxes,.success_box").css("display","none");
+        });
+        $(".success_btn").click(function(){
+            $("#memories").text(0);
+            $(".boxes,.success_box").css("display","none");
+        })
+    });
+
+    /*收藏*/
+    $(".s_left").click(function(){
+        location.href="./collection.html";
+    });
+
+    $(".text").click(function(){
+        var i=$(this).index();
+        console.log(i);
+        //设置DIV显示隐藏
+        $(".content").hide();
+        $(".content").eq(i).show();
+
+        //设置标签样式
+        $(".text").removeClass("active");
+        $(this).addClass("active");
+        $(".content").children().removeClass("active");
+        $(".content").eq(i).children().addClass("active")
     })
-};
+});

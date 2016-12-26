@@ -31,18 +31,22 @@
     </div>
     <div class="row">
         <i class="pass-img"></i>
-        <label for="password" class="form-name">密码：</label>
+        <label for="password" class="form-name" id="form-name">密码：</label>
         <div class="link_cell">
             <input type="password" class="inp" id="password" placeholder="请输入您的账号密码">
         </div>
     </div>
 </div>
 <div class="row_button">
-    <a  href="" class="submit">登录</a>
+    <!--<input type="submit" class="submit" value="登录" disabled="disabled">-->
+    <span class="submit" disabled="disabled">登录</span>
 </div>
 <div class="bottom">
     <a href="./register.html" class="left">注册</a>
     <a href="./password.html" class="right">忘记密码？</a>
 </div>
 </body>
+<script src="//cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+<script src="../../public/libs/zepto/touch.js"></script>
+<script src="../../public/js/signin.js"></script>
 </html>
